@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Academix</title>
+    <link rel="icon" href="sohrtlogo.png">
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- start nav -->
+    <div class="nav">
+      <div class="container nav-container">
+        <img src="logo.png" alt="logo" class="nav-logo" />
+        <div class="nav-links">
+          <i class="fa-solid fa-bars nav-links-bar"></i>
+          <ul class="nav-links-opation">
+            <li><a href="#landing">Home</a></li>
+            <li><a href="#contactus">Contact US</a></li>
+            <li><a href="#aboutus">About Us</a></li>
+        </div>
+      </div>
+    </div>
+    <!-- end nav -->
+    <!-- start landing -->
+ <div class="landing-section" id="landing">
+    <div class="container landing-container">
+        <div class="landing-content">
+            <h1 class="landing-heading"><span class="text-highlight">Studying</span> Online is now much easier</h1>
+            <p class="landing-description">Acadmix is an interesting platform that will teach you in a more interactive way.</p>
+            <div class="landing-buttons">
+                <button class="login-button" >Log In</button>
+                <button class="signup-button">Sign Up</button>
+            </div>
+        </div>
+        <img src="sohrtlogo.png" alt="" class="landing-image">
+    </div>
+</div>
+<!-- start login popup -->
+<div class="login-popup">
+    <form action="" class="login-popup-form">
+        <div class="login-form-header">
+            <h2 class="login-form-welcome">Welcome Back</h2>
+            <p class="login-form-description">
+                Enter your credentials to access your account
+            </p>
+        </div>
+        <div class="login-form-boxes">
+            <div class="login-form-input-group">
+              <i class="fa-solid fa-user login-form-icon"></i>
+                <input type="email" class="login-form-input" name="username" placeholder="Enter your email" required/>
+            </div>
+            <div class="login-form-input-group">
+                  <i class="fa-solid fa-lock login-form-icon"></i>
+                <input type="password" class="login-form-input" name="password" placeholder="Enter your password" required/>
+            </div>
+        </div>
+        <button class="login-form-button">Log In</button>
+        <a href="#" class="login-forget-password-link">Forget Password?</a>
+    </form>
+    <div class="overlay"></div>
+</div>
+
+<!-- end login popup -->
+<!-- start signup popup -->
+<div class="signup-popup">
+    <form class="signup-popup-form">
+        <h1 class="signup-form-header">Sign Up</h1>
+        <div class="signup-fullname-inputs">
+            <input type="text" placeholder="First Name" class="signup-firstname-input" name="firstname"  required/>
+            <input type="text" placeholder="Last Name" class="signup-lastname-input" name="lastname" required/>
+        </div>
+        <input type="text" placeholder="User Name" class="signup-username-input" name="username" required/>
+        <input type="email" name="email" placeholder="Email" class="signup-email-input" required/>
+        <input type="password" name="password" class="signup-password-input" placeholder="Password" required/>
+        <input type="password" name="confirmpassword" class="signup-confirmpassword-input" placeholder="Confirm Password" required/>
+        <select name="user-type" class="signup-user-type-select" required >
+            <option value="admin">Instructor</option>
+            <option value="assistant">Assistant</option>
+            <option value="student">Student</option>
+        </select>
+        <input type="submit" class="signup-submit-button" />
+    </form>
+    <div class="overlay"></div>
+  </div>
+<!-- end signup popup -->
+<!-- end landing -->
+<!-- start  contactus-->
+<div class="contactus" id="contactus">
+    <div class="container contactus-container">
+        <div class="contactus-header">
+          <h2>Contact Us</h2>
+          <p>Any question or remarks? Just write us a message!</p>
+        </div>
+        <div class="contactus-content">
+          <div class="contactus-content-left">
+            <div class="Contact-Info">
+              <h3 class="Contact-header">Contact Information</h3>
+              <div class="Contact-box">
+                <ion-icon name="mail-outline"></ion-icon>
+                <p>info@example.com</p>
+              </div>
+              <div class="Contact-box">
+                <ion-icon name="call-outline"></ion-icon>
+                <p>01021669849</p>
+              </div>
+              <div class="Contact-box">
+                <ion-icon name="location-outline"></ion-icon>
+                <p>ZAGAIG</p>
+              </div>
+            </div>
+            <div class="Contact-social">
+              <h3 class="Contact-header">Social</h3>
+              <div class="Contact-box">
+                <ion-icon name="logo-twitter"></ion-icon>
+                <p>info@example.com</p>
+              </div>
+              <div class="Contact-box">
+                <ion-icon name="logo-facebook"></ion-icon>
+                <p>info@example.com</p>
+              </div>
+              <div class="Contact-box">
+                <ion-icon name="logo-youtube"></ion-icon>
+                <p>info@example.com</p>
+              </div>
+              <div class="Contact-box">
+                <ion-icon name="logo-linkedin"></ion-icon>
+                <p>info@example.com</p>
+              </div>
+              <div class="Contact-box">
+                <ion-icon name="logo-instagram"></ion-icon>
+                <p>info@example.com</p>
+              </div>
+            </div>
+          </div>
+        <form class="contactus-content-form">
+          <div class="contactus-fullname-inputs">
+              <input type="text" placeholder="First Name" class="contactus-firstname-input" name="firstname"  required/>
+              <input type="text" placeholder="Last Name" class="contactus-lastname-input" name="lastname" required/>
+          </div>
+          <input type="email" name="email" placeholder="Email" class="contactus-email-input" required/>
+          <textarea name="message" id="" placeholder="Write Your Message...." class="contactus-message"></textarea>
+        <button class="contactus-submit-button" >Send Message</button>
+        </form>
+        </div>
+    </div>
+</div>
+<!-- end contactus -->
+<!-- start  aboutus-->
+<div class="about-us container" id="aboutus">
+  <div class="about-us-header">
+    <div class="about-us-header-img">
+      <img src="sohrtlogo.png" alt="Company Logo">
+    </div>
+    <div class="about-us-header-text">
+      <h3>Who we are?</h3>
+      <p>Founded in 2023, Acadmix is an online learning platform that allows students to learn at their own pace, test themselves, and get ahead with our expert tutors anytime and anywhere. By offering short, engaging video lessons, visualized learning journeys, continuous assessment, and performance analytics, we are changing the way students learn outside the classroom.</p>
+    </div>
+  </div>
+  <div class="about-us-header phone">
+      <h2>about us</h2>
+      <p>Founded in 2023, Acadmix is an online learning platform that allows students to learn at their own pace, test themselves, and get ahead with our expert tutors anytime and anywhere. By offering short, engaging video lessons, visualized learning journeys, continuous assessment, and performance analytics, we are changing the way students learn outside the classroom.</p>
+  </div>
+  <div class="team-content">
+    <div class="team-header">Our Team</div>
+    <div class="team">
+    <div class="person">
+      <div class="person-img">
+        <img src="team img/Mahmoud Youssef.png" alt="">
+      </div>
+      <div class="person-text">
+        <h3>Mahmoud Youssef</h3>
+        <p>Role: UI UX Designer.</p>
+      </div>
+    </div>
+    <div class="person">
+      <div class="person-img">
+        <img src="team img/Mohamed Magdy.png" alt="">
+      </div>
+      <div class="person-text">
+        <h3>Mohamed Magdy</h3>
+        <p>Role: Front-end Developer.</p>
+      </div>
+    </div>
+    <div class="person">
+      <div class="person-img">
+        <img src="team img/1.png" alt="">
+      </div>
+      <div class="person-text">
+        <h3>Mohamed Elswadfy</h3>
+        <p>Role: Front-end Developer.</p>
+      </div>
+    </div>
+    <div class="person">
+      <div class="person-img">
+        <img src="team img/Mohamed Farag.png" alt="">
+      </div>
+      <div class="person-text">
+        <h3>Mohamed Farag</h3>
+        <p>Role: Back-end Developer.</p>
+      </div>
+    </div>
+    <div class="person">
+      <div class="person-img">
+        <img src="team img/Mohamed Abdelmonim.png" alt="">
+      </div>
+      <div class="person-text">
+        <h3>Mohamed Abdelmonim</h3>
+        <p>Role: Back-end Developer.</p>
+      </div>
+    </div>
+    <div class="person">
+      <div class="person-img">
+        <img src="team img/Mahmoud Abdelhamid.png" alt="">
+      </div>
+      <div class="person-text">
+        <h3>Mahmoud Abdelhamid</h3>
+        <p>Role: Penetration Tester.</p>
+      </div>
+    </div>
+    <div class="person">
+      <div class="person-img">
+        <img src="team img/Ahmed Abdelwahd.png" alt="">
+      </div>
+      <div class="person-text">
+        <h3>Ahmed Abdelwahd</h3>
+        <p>Role: Back-end Developer.</p>
+      </div>
+    </div>
+    <div class="person">
+      <div class="person-img">
+        <img src="team img/Abdhullh Eldsoky.png" alt="">
+      </div>
+      <div class="person-text">
+        <h3>Abdhullh Eldsoky</h3>
+        <p>Role: UI UX Designer.</p>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="plan">
+    <div class="plan-header">Our Plans</div>
+    <div class="plan-content">
+      <div class="perspective-box">
+      <div class="plan-box">
+        <div class="plan-box-face front">
+          <div class="plan-box-header">Our Content</div>
+          <div class="plan-box-text">From creative video animation to solid question banks, we invest in producing the highest-quality content for our students. Each piece of content we create goes through a rigorous process of quality evaluation and audit by subject matter experts to ensure that only the best is delivered.</div>
+          <button class="plan-btn">Read More</button>
+        </div>
+        <div class="plan-box-face back">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus dolorum mollitia, hic porro iste laborum iusto cum non recusandae, perspiciatis ipsum excepturi officia nisi beatae rerum corrupti atque nulla aspernatur!
+        </div>
+      </div>
+    </div>
+    <div class="perspective-box">
+      <div class="plan-box">
+        <div class="plan-box-face front">
+          <div class="plan-box-header">Our mission</div>
+          <div class="plan-box-text">At the heart of acadmix is a mission to democratize education and make learning accessible to everyone, anywhere. We strive to bridge educational gaps, empower individuals to reach their full potential, and contribute to the development of a knowledgeable and skilled global community. Our commitment is to foster a love for learning that lasts a lifetime.</div>
+            <button class="plan-btn">Read More</button>
+        </div>
+        <div class="plan-box-face back">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus repudiandae, ut ea aperiam explicabo voluptates vero possimus minima debitis harum sapiente est ad labore quod officia nobis incidunt at molestiae!</div>
+      </div>
+    </div>
+      <div class="perspective-box">
+      <div class="plan-box">
+        <div class="plan-box-face front">
+          <div class="plan-box-header">Our Tutors</div>
+          <div class="plan-box-text">Tired of reading online tutor reviews and checking ratings? We get it. We spare you the hassle of trying to find the best private tutor whether online or at a learning center by vetting tutors for you instead. Our tutors are carefully hand-picked by our team after a rigorous evaluation process to ensure that nothing short of a high-quality .... </div>
+            <button class="plan-btn">Read More</button>
+        </div>
+        <div class="plan-box-face back">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo velit enim vero nobis voluptatem sit nulla aut voluptate rerum dolor asperiores, odio, vel eveniet numquam ea iste? Hic, officiis quas!</div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<div class="footer">
+  <div class="footer-img">
+    <img src="logo.png" alt="">
+  </div>
+  <div class="footer-logo">
+    <img src="logo img/facebook.png" alt="">
+    <img src="logo img/instagram.png" alt="">
+    <img src="logo img/twitter.png" alt="">
+    <img src="logo img/linkedin.png" alt="">
+  </div>
+  <div class="footer-text">&copy; 2024 Acadmix . All rights reserved  </div>
+</div>
+
+<!-- end  aboutus-->
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
